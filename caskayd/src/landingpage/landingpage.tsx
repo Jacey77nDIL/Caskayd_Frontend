@@ -56,6 +56,7 @@ export default function LandingPage() {
                 /* textTransform: "uppercase", */
                 marginBottom: 2,
                 fontFamily: "Roboto, sans-serif",
+                mb: 4
               }}
             >
               #1 Influencer Marketing <br /> Platform
@@ -69,6 +70,7 @@ export default function LandingPage() {
                 marginBottom: 2,
                 fontFamily: "Roboto, sans-serif",
                 fontSize: 20,
+                mb: 8
               }}
             >
               Focus on your products, we&apos;ll handle the rest. Our intuitive
@@ -82,7 +84,7 @@ export default function LandingPage() {
                 fontWeight: "bold",
                 letterSpacing: 2,
                 /* textTransform: "uppercase", */
-                marginBottom: 2,
+                marginBottom: 6,
                 fontFamily: "Roboto, sans-serif",
               }}
             >
