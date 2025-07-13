@@ -13,7 +13,7 @@
 }
 
 .background{
-   background-image: url('@/assets/landing/landing.jpeg');
+   background-image: url("/assets/landing/landing.jpeg");
     background-size: cover;
     height: 80vh;
     width: 90%;
