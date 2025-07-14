@@ -70,7 +70,7 @@ export default function BusinessWaitlistPage() {
 
     const sendToBackend = async () => {
       try {
-        const response = await fetch('/api/waitlist', {// change this later to actual backend api end point
+        const response = await fetch('https://caskayd-backend-staging.onrender.com/register/', {// change this later to actual backend api end point
           method: 'POST',
           headers: {
             'Content-Type': 'application/json',
@@ -98,14 +98,14 @@ export default function BusinessWaitlistPage() {
 
   return (
     <main
-      className={`${inter.className} min-h-screen bg-cover bg-center flex items-center justify-center px-4`}
+      className={`${inter.className} min-h-screen bg-cover bg-center flex items-center justify-center px-4 sm:px-6 md:px-8 lg:px-12`}
       style={{ backgroundImage: "url('/bg.jpg')" }}
     >
       <div className="relative bg-black backdrop-blur-sm w-full max-w-[650px] rounded-xl p-6 text-white shadow-xl">
         {/* Back arrow */}
         <button
           onClick={() => router.back()}
-          className="ml-8 absolute top-4 left-4 text-white hover:text-gray-300 transition"
+          className="ml-8 absolute top-4 left-4 text-3xl text-white hover:text-gray-300 hover:scale-110 hover:shadow-lg transition-transform duration-300"
         >
           ←
         </button>
@@ -124,7 +124,7 @@ export default function BusinessWaitlistPage() {
               value={email}
               onChange={(e) => setEmail(e.target.value)}
               placeholder="Input your email"
-              className="w-full border-b border-gray-400 px-4 py-2 bg-transparent text-white placeholder:italic placeholder-gray-400 focus:outline-none focus:ring-2 focus:ring-white"
+              className="w-full sm:w-[350px] border-b border-gray-400 px-4 py-2 bg-transparent text-white  placeholder-gray-400 focus:outline-none"
               required
             />
             {errors.email && (
@@ -143,7 +143,7 @@ export default function BusinessWaitlistPage() {
               placeholder="Input your number"
               pattern="[0-9]*"
               inputMode="numeric"
-              className="w-full border-b border-gray-400 px-4 py-2 bg-transparent text-white placeholder:italic placeholder-gray-400 focus:outline-none focus:ring-2 focus:ring-white"
+              className="w-full sm:w-[350px] border-b border-gray-400 px-4 py-2 bg-transparent text-white  focus:outline-none "
               required
             />
             {errors.phone && (
@@ -156,10 +156,10 @@ export default function BusinessWaitlistPage() {
             name="category"
             value={category}
             onChange={(e) => setCategory(e.target.value)}
-            className="w-full sm:w-[250px] px-4 py-2 rounded-lg bg-[rgb(36,36,36)] text-white focus:outline-none focus:ring-2 focus:ring-white"
+            className="w-full sm:w-[250px] px-4 py-2 rounded-lg bg-[rgb(36,36,36)] text-white"
             required
           >
-            <option value=""disabled hidden>business category</option>
+            <option value=""disabled hidden>Business category</option>
             <option value="Products and Retail">Products and Retail</option>
             <option value="Fashion">Fashion</option>
             <option value="Beauty and personal care">Beauty and personal care</option>
@@ -174,16 +174,11 @@ export default function BusinessWaitlistPage() {
 
           {/*code for submit button*/}
           <button
-            type="submit"
-            disabled={isSubmitting}
-            className={`self-center mt-6 px-8 py-3 w-[150px] text-xl font-semibold rounded transition ${
-              isSubmitting
-                ? 'bg-gray-500 text-white cursor-not-allowed'
-                : 'bg-white text-black hover:bg-black hover:text-white'
-            }`}
-          >
-            {isSubmitting ? 'Submitting...' : 'Submit'}
-          </button>
+              type="submit"
+              disabled={isSubmitting}
+              className={`self-center mt-4 px-8 py-3 w-[150px] h-[50px] text-2xl font-semibold font-sans rounded transition-transform duration-300 bg-white text-black hover:scale-110 hover:shadow-lg`}>
+                Submit
+            </button>
         </form>
       </div>
     </main>
