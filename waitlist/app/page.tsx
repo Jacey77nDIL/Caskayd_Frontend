@@ -28,13 +28,13 @@ const HomePage = () => {
 
         <div className="flex flex-col sm:flex-row gap-4 mt-2">
           <Link href="/CreatorWaitlistPage">
-            <button className="bg-white text-black px-6 py-3 text-lg sm:text-xl rounded-sm hover:bg-black hover:text-white transition">
+            <button className="bg-white text-black px-6 py-3 text-lg sm:text-xl rounded-sm hover:scale-110 hover:shadow-lg transition-transform duration-300">
               Creator
             </button>
           </Link>
 
           <Link href="/BusinessWaitlistPage">
-            <button className="bg-black border border-white px-6 py-3 text-lg sm:text-xl rounded-sm hover:bg-white hover:text-black transition">
+            <button className="bg-black border border-white px-6 py-3 text-lg sm:text-xl rounded-sm  hover:scale-110 hover:shadow-lg transition-transform duration-300">
               Business
             </button>
           </Link>
