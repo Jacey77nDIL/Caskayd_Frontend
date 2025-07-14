@@ -12,7 +12,7 @@ export default function FlipFormPage() {
   const router = useRouter();
 
   return (
-    <main className={`${inter.className} min-h-screen bg-cover bg-center flex items-center justify-center`}
+    <main className={`${inter.className} min-h-screen bg-cover bg-center flex items-center justify-center px-4 sm:px-6 md:px-8 lg:px-12`}
       style={{ backgroundImage: "url('/bg.jpg')" }}>
       {/* Black card container */}
       <div className="relative bg-black backdrop-blur-sm w-[650px] h-[433px] max-w-none rounded-xl p-6 text-white shadow-xl">

@@ -98,7 +98,7 @@ export default function BusinessWaitlistPage() {
 
   return (
     <main
-      className={`${inter.className} min-h-screen bg-cover bg-center flex items-center justify-center px-4`}
+      className={`${inter.className} min-h-screen bg-cover bg-center flex items-center justify-center px-4 sm:px-6 md:px-8 lg:px-12`}
       style={{ backgroundImage: "url('/bg.jpg')" }}
     >
       <div className="relative bg-black backdrop-blur-sm w-full max-w-[650px] rounded-xl p-6 text-white shadow-xl">
@@ -124,7 +124,7 @@ export default function BusinessWaitlistPage() {
               value={email}
               onChange={(e) => setEmail(e.target.value)}
               placeholder="Input your email"
-              className="w-full border-b border-gray-400 px-4 py-2 bg-transparent text-white  placeholder-gray-400 focus:outline-none"
+              className="w-full sm:w-[350px] border-b border-gray-400 px-4 py-2 bg-transparent text-white  placeholder-gray-400 focus:outline-none"
               required
             />
             {errors.email && (
@@ -143,7 +143,7 @@ export default function BusinessWaitlistPage() {
               placeholder="Input your number"
               pattern="[0-9]*"
               inputMode="numeric"
-              className="w-full border-b border-gray-400 px-4 py-2 bg-transparent text-white  focus:outline-none "
+              className="w-full sm:w-[350px] border-b border-gray-400 px-4 py-2 bg-transparent text-white  focus:outline-none "
               required
             />
             {errors.phone && (
