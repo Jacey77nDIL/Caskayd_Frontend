@@ -9,8 +9,8 @@ const inter = Inter({
 
 const HomePage = () => {
   return (
-    <main className={`${inter.className} min-h-screen bg-black flex items-center justify-center px-4`}>
-      <div
+<main className={`${inter.className} min-h-screen bg-black flex items-center justify-center px-4 sm:px-6 md:px-8 lg:px-12`}> 
+  <div
         className="w-full max-w-[1200px] h-auto md:h-[550px] bg-cover bg-center rounded-2xl shadow-xl flex flex-col items-center justify-center text-white p-6 md:p-12"
         style={{ backgroundImage: "url('/bg.jpg')" }}
       >
@@ -26,19 +26,19 @@ const HomePage = () => {
           Choose your tier and start driving results today.
         </h2>
 
-        <div className="flex flex-col sm:flex-row gap-4 mt-2">
-          <Link href="/CreatorWaitlistPage">
-            <button className="bg-white text-black px-6 py-3 text-lg sm:text-xl rounded-sm hover:bg-black hover:text-white transition">
-              Creator
-            </button>
-          </Link>
+        <div className="flex flex-col sm:flex-row gap-4 mt-2 w-full sm:max-w-[500px]">
+  <Link href="/CreatorWaitlistPage" className="flex-1">
+    <button className="w-full bg-white text-black px-6 py-3 text-lg sm:text-xl rounded-sm hover:scale-110 hover:shadow-lg transition-transform duration-300">
+      Creator
+    </button>
+  </Link>
 
-          <Link href="/BusinessWaitlistPage">
-            <button className="bg-black border border-white px-6 py-3 text-lg sm:text-xl rounded-sm hover:bg-white hover:text-black transition">
-              Business
-            </button>
-          </Link>
-        </div>
+  <Link href="/BusinessWaitlistPage" className="flex-1">
+    <button className="w-full bg-black border border-white px-6 py-3 text-lg sm:text-xl rounded-sm hover:scale-110 hover:shadow-lg transition-transform duration-300">
+      Business
+    </button>
+  </Link>
+</div>
       </div>
     </main>
   );
