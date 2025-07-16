@@ -10,8 +10,8 @@ export default function LandingPage() {
           display: "flex",
           flexDirection: "row",
           justifyContent: "space-between",
-          width: "80%",
         }}
+        sx={{width: {xs: "90%", sm: "88%", md: "84%", lg: "80%"}}}
       >
         <Typography
           variant="h4"
@@ -26,8 +26,28 @@ export default function LandingPage() {
         >
           Logo
         </Typography>
-        <Link href="">
-          <Button variant="text" sx={{ color: "white" }}>
+        <Link href="/waitlist">
+          <Button
+            variant="contained"
+            sx={{
+              color: "white",
+              backgroundColor: "transparent",
+              border: "2px solid transparent",
+              transition: "all 0.3s ease",
+              borderRadius: "8px",
+              fontSize: { xs: 12, sm: 16, md: 18, lg: 20, xl: 22 },
+              textWrap: "nowrap",
+
+              "@media (hover: hover)": {
+                "&:hover": {
+                  backgroundColor: "white   ",
+                  transform: "scale(1.05)",
+                  color: "black",
+                  borderColor: "white",
+                },
+              },
+            }}
+          >
             Start Using Caskayd
           </Button>
         </Link>
@@ -36,10 +56,12 @@ export default function LandingPage() {
         <Box
           sx={{
             gap: {
+              xs: 4,
               sm: 8,
               md: 15,
               lg: 20,
             },
+            paddingBottom: "50px",
           }}
         >
           <Stack
@@ -51,7 +73,7 @@ export default function LandingPage() {
           >
             <Typography
               sx={{
-                fontSize: { xs: 20, sm: 30, md: 45, lg: 70, xl: 80 },
+                fontSize: { xs: 20, sm: 30, md: 42, lg: 62},
                 color: "white",
                 fontWeight: "bold",
                 letterSpacing: 2,
@@ -63,7 +85,7 @@ export default function LandingPage() {
                 mb: 4,
               }}
             >
-              #1 Influencer Marketing Platform
+              Your Partner For Strategic Influencer Marketing
             </Typography>
             <Typography
               sx={{
@@ -75,13 +97,11 @@ export default function LandingPage() {
                 fontFamily: "Roboto, sans-serif",
                 paddingLeft: { xs: 2, sm: 6, md: 8, lg: 10, xl: 13 },
                 paddingRight: { xs: 2, sm: 6, md: 8, lg: 10, xl: 13 },
-                fontSize: { xs: 12, sm: 16, md: 18, lg: 20, xl: 22 },
+                fontSize: { xs: 16, sm: 16, md: 18, lg: 20, xl: 22 },
                 mb: 8,
               }}
             >
-              Focus on your products, we&apos;ll handle the rest. Our intuitive
-              platform makes it easy to create a stunning online store and reach
-              your customers
+              Whether you&apos;re a business looking to expand your reach or a creator seeking impactful collaborations. Caskayd provides the intuitive tools and resources to make it happen
             </Typography>
             <Typography
               sx={{
@@ -91,7 +111,7 @@ export default function LandingPage() {
                 /* textTransform: "uppercase", */
                 marginBottom: 6,
                 fontFamily: "Roboto, sans-serif",
-                fontSize: {xs: 16, sm: 20, md: 25, lg: 28, xl: 30},
+                fontSize: { xs: 16, sm: 20, md: 25, lg: 28, xl: 30 },
               }}
             >
               Quick one! Where do you belong?
@@ -103,6 +123,7 @@ export default function LandingPage() {
                 width: "100%",
                 alignItems: "center",
                 justifyContent: "center",
+                paddingBottom: 10,
               }}
               sx={{
                 gap: {
@@ -113,20 +134,41 @@ export default function LandingPage() {
                 },
               }}
             >
-              <Button
-                variant="contained"
-                size="large"
-                sx={{ backgroundColor: "white", color: "black" }}
-              >
-                Creator
-              </Button>
-              <Button
-                variant="contained"
-                size="large"
-                sx={{ backgroundColor: "black", color: "white" }}
-              >
-                Business
-              </Button>
+              <Link href="/creator">
+                <Button
+                  variant="contained"
+                  size="large"
+                  sx={{
+                    backgroundColor: "white",
+                    color: "black",
+                    transition: "all 0.3s ease",
+                    "&:hover": {
+                      transform: "scale(1.05)",
+                      //backgroundColor: "#f0f0f0",
+                      backgroundColor: "#e0e0e0",
+                    },
+                  }}
+                >
+                  Creator
+                </Button>
+              </Link>
+              <Link href="/business">
+                <Button
+                  variant="contained"
+                  size="large"
+                  sx={{
+                    backgroundColor: "black",
+                    color: "white",
+                    transition: "all 0.3s ease",
+                    "&:hover": {
+                      transform: "scale(1.05)",
+                      backgroundColor: "#111",
+                    },
+                  }}
+                >
+                  Business
+                </Button>
+              </Link>
             </Stack>
           </Stack>
         </Box>
