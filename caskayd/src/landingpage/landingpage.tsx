@@ -56,10 +56,12 @@ export default function LandingPage() {
         <Box
           sx={{
             gap: {
+              xs: 4,
               sm: 8,
               md: 15,
               lg: 20,
             },
+            paddingBottom: "50px",
           }}
         >
           <Stack
@@ -83,7 +85,7 @@ export default function LandingPage() {
                 mb: 4,
               }}
             >
-              #1 Influencer Marketing Platform
+              Your Partner For Strategic Influencer Marketing
             </Typography>
             <Typography
               sx={{
@@ -99,9 +101,7 @@ export default function LandingPage() {
                 mb: 8,
               }}
             >
-              Focus on your products, we&apos;ll handle the rest. Our intuitive
-              platform makes it easy to create a stunning online store and reach
-              your customers
+              Whether you&apos;re a business looking to expand your reach or a creator seeking impactful collaborations. Caskayd provides the intuitive tools and resources to make it happen
             </Typography>
             <Typography
               sx={{
@@ -123,6 +123,7 @@ export default function LandingPage() {
                 width: "100%",
                 alignItems: "center",
                 justifyContent: "center",
+                paddingBottom: 10,
               }}
               sx={{
                 gap: {

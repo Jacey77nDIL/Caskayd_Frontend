@@ -442,19 +442,6 @@ export default function ContentCreator() {
           >
             <FontAwesomeIcon icon={faInstagram} style={{color: "white"}} />
           </Box>
-          <Typography
-            sx={{
-              textWrap: "nowrap",
-              fontSize: {
-                xs: "10px",
-                sm: "14px",
-                md: "17px",
-                lg: "20px",
-              },
-            }}
-          >
-            Instagram
-          </Typography>
         </Stack>
         <Stack
           style={{
@@ -496,19 +483,6 @@ export default function ContentCreator() {
           >
             <FontAwesomeIcon icon={faFacebookF} style={{color: "white"}} />
           </Box>
-          <Typography
-            sx={{
-              textWrap: "nowrap",
-              fontSize: {
-                xs: "10px",
-                sm: "14px",
-                md: "17px",
-                lg: "20px",
-              },
-            }}
-          >
-            Facebook
-          </Typography>
         </Stack>
         <Stack
           style={{
@@ -549,19 +523,6 @@ export default function ContentCreator() {
           >
             <FontAwesomeIcon icon={faTiktok} style={{color: "white"}} />
           </Box>
-          <Typography
-            sx={{
-              textWrap: "nowrap",
-              fontSize: {
-                xs: "10px",
-                sm: "14px",
-                md: "17px",
-                lg: "20px",
-              },
-            }}
-          >
-            Tiktok
-          </Typography>
         </Stack>
         <Stack
           style={{
@@ -602,19 +563,6 @@ export default function ContentCreator() {
           >
             <FontAwesomeIcon icon={faYoutube} style={{color: "white"}} />
           </Box>
-          <Typography
-            sx={{
-              textWrap: "nowrap",
-              fontSize: {
-                xs: "10px",
-                sm: "14px",
-                md: "17px",
-                lg: "20px",
-              },
-            }}
-          >
-            Youtube
-          </Typography>
         </Stack>
       </Stack>
       <Stack
@@ -681,19 +629,6 @@ export default function ContentCreator() {
           >
             <FontAwesomeIcon icon={faXTwitter} style={{color: "white"}} />
           </Box>
-          <Typography
-            sx={{
-              textWrap: "nowrap",
-              fontSize: {
-                xs: "10px",
-                sm: "14px",
-                md: "17px",
-                lg: "20px",
-              },
-            }}
-          >
-            Twitter
-          </Typography>
         </Stack>
         <Stack
           style={{
@@ -734,19 +669,7 @@ export default function ContentCreator() {
           >
             <FontAwesomeIcon icon={faWhatsapp} style={{color: "white"}} />
           </Box>
-          <Typography
-            sx={{
-              textWrap: "nowrap",
-              fontSize: {
-                xs: "10px",
-                sm: "14px",
-                md: "17px",
-                lg: "20px",
-              },
-            }}
-          >
-            Whatsapp
-          </Typography>
+        
         </Stack>
         <Stack
           style={{
@@ -787,19 +710,6 @@ export default function ContentCreator() {
           >
             <FontAwesomeIcon icon={faSnapchatGhost} style={{color: "white"}}/>
           </Box>
-          <Typography
-            sx={{
-              textWrap: "nowrap",
-              fontSize: {
-                xs: "10px",
-                sm: "14px",
-                md: "17px",
-                lg: "20px",
-              },
-            }}
-          >
-            Snapchat
-          </Typography>
         </Stack>
         <Stack
           style={{
@@ -840,19 +750,6 @@ export default function ContentCreator() {
           >
             <FontAwesomeIcon icon={faTelegramPlane} style={{color: "white"}} />
           </Box>
-          <Typography
-            sx={{
-              textWrap: "nowrap",
-              fontSize: {
-                xs: "10px",
-                sm: "14px",
-                md: "17px",
-                lg: "20px",
-              },
-            }}
-          >
-            Telegram
-          </Typography>
         </Stack>
       </Stack>
       <Stack
@@ -904,7 +801,7 @@ export default function ContentCreator() {
             maxWidth: "800px",
             aspectRatio: "4 / 2",
             bottom: 0,
-            height: { xs: "45vh", sm: "60vh", md: "65vh", lg: "100vh" },
+            height: { xs: "40vh", sm: "60vh", md: "65vh", lg: "100vh" },
             marginTop: 10,
           }}
         >
@@ -965,7 +862,7 @@ export default function ContentCreator() {
             maxWidth: "800px",
             aspectRatio: "4 / 2",
             bottom: 0,
-            height: { xs: "45vh", sm: "60vh", md: "65vh", lg: "100vh" },
+            height: { xs: "40vh", sm: "60vh", md: "65vh", lg: "100vh" },
             marginTop: 10,
           }}
         >
@@ -1047,12 +944,13 @@ export default function ContentCreator() {
               </Button> 
             </Link> */}
             <Stack
+            direction={{xs: "column", sm: "column", md: "row", lg: "row"}}
               style={{
                 display: "flex",
-                flexDirection: "row",
                 alignItems: "center",
                 justifyContent: "space-evenly",
                 width: "100%",
+                padding: 2,
               }}
               sx={{
                 gap: {
