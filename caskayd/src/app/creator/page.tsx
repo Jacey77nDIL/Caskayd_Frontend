@@ -34,7 +34,7 @@ export default function ContentCreator() {
           borderRadius: 20,
           overflowY: "hidden",
         }}
-        sx={{width: {xs: "90%", sm: "88%", md: "84%", lg: "80%"}}}
+        sx={{ width: { xs: "90%", sm: "88%", md: "84%", lg: "80%" } }}
       >
         <Typography
           variant="h5"
@@ -138,7 +138,7 @@ export default function ContentCreator() {
                 },
               }}
             >
-         {/*     <Link>
+              {/*     <Link>
                 <Button
                   variant="contained"
                   sx={{
@@ -348,17 +348,18 @@ export default function ContentCreator() {
           sx={{
             position: "relative",
             width: "100%",
-            maxWidth: "800px",
+            maxWidth: "900px",
             aspectRatio: "4 / 2",
-            px: { xs: 2, sm: 4, md: 8 },
-            mb: 0,
+            bottom: 0,
+            height: { xs: "15vh", sm: "20vh", md: "20vh", lg: "40vh" },
+            marginTop: 10,
           }}
         >
           <Image
-            src="/AmplifyYourBrandWithInfluencers.png"
-            alt="amp"
+            src="/ecommerce.jpeg"
+            alt="ec"
             fill
-            style={{ objectFit: "contain" }}
+            style={{ objectFit: "inherit", borderRadius: 10 }}
           />
         </Stack>
       </div>
@@ -440,7 +441,7 @@ export default function ContentCreator() {
               },
             }}
           >
-            <FontAwesomeIcon icon={faInstagram} style={{color: "white"}} />
+            <FontAwesomeIcon icon={faInstagram} style={{ color: "white" }} />
           </Box>
         </Stack>
         <Stack
@@ -481,7 +482,7 @@ export default function ContentCreator() {
               },
             }}
           >
-            <FontAwesomeIcon icon={faFacebookF} style={{color: "white"}} />
+            <FontAwesomeIcon icon={faFacebookF} style={{ color: "white" }} />
           </Box>
         </Stack>
         <Stack
@@ -521,7 +522,7 @@ export default function ContentCreator() {
               },
             }}
           >
-            <FontAwesomeIcon icon={faTiktok} style={{color: "white"}} />
+            <FontAwesomeIcon icon={faTiktok} style={{ color: "white" }} />
           </Box>
         </Stack>
         <Stack
@@ -561,7 +562,7 @@ export default function ContentCreator() {
               },
             }}
           >
-            <FontAwesomeIcon icon={faYoutube} style={{color: "white"}} />
+            <FontAwesomeIcon icon={faYoutube} style={{ color: "white" }} />
           </Box>
         </Stack>
       </Stack>
@@ -627,7 +628,7 @@ export default function ContentCreator() {
               },
             }}
           >
-            <FontAwesomeIcon icon={faXTwitter} style={{color: "white"}} />
+            <FontAwesomeIcon icon={faXTwitter} style={{ color: "white" }} />
           </Box>
         </Stack>
         <Stack
@@ -667,48 +668,7 @@ export default function ContentCreator() {
               },
             }}
           >
-            <FontAwesomeIcon icon={faWhatsapp} style={{color: "white"}} />
-          </Box>
-        
-        </Stack>
-        <Stack
-          style={{
-            display: "flex",
-            flexDirection: "row",
-            justifyContent: "space-evenly",
-            alignItems: "center",
-          }}
-          sx={{
-            gap: {
-              xs: 0.4,
-              sm: 0.6,
-              md: 0.8,
-              lg: 1,
-            },
-          }}
-        >
-          <Box
-            style={{
-              display: "flex",
-              alignItems: "center",
-              justifyContent: "center",
-            }}
-            sx={{
-              height: {
-                xs: "15px",
-                sm: "18px",
-                md: "24px",
-                lg: "30px",
-              },
-              width: {
-                xs: "15px",
-                sm: "18px",
-                md: "24px",
-                lg: "30px",
-              },
-            }}
-          >
-            <FontAwesomeIcon icon={faSnapchatGhost} style={{color: "white"}}/>
+            <FontAwesomeIcon icon={faWhatsapp} style={{ color: "white" }} />
           </Box>
         </Stack>
         <Stack
@@ -748,7 +708,53 @@ export default function ContentCreator() {
               },
             }}
           >
-            <FontAwesomeIcon icon={faTelegramPlane} style={{color: "white"}} />
+            <FontAwesomeIcon
+              icon={faSnapchatGhost}
+              style={{ color: "white" }}
+            />
+          </Box>
+        </Stack>
+        <Stack
+          style={{
+            display: "flex",
+            flexDirection: "row",
+            justifyContent: "space-evenly",
+            alignItems: "center",
+          }}
+          sx={{
+            gap: {
+              xs: 0.4,
+              sm: 0.6,
+              md: 0.8,
+              lg: 1,
+            },
+          }}
+        >
+          <Box
+            style={{
+              display: "flex",
+              alignItems: "center",
+              justifyContent: "center",
+            }}
+            sx={{
+              height: {
+                xs: "15px",
+                sm: "18px",
+                md: "24px",
+                lg: "30px",
+              },
+              width: {
+                xs: "15px",
+                sm: "18px",
+                md: "24px",
+                lg: "30px",
+              },
+            }}
+          >
+            <FontAwesomeIcon
+              icon={faTelegramPlane}
+              style={{ color: "white" }}
+            />
           </Box>
         </Stack>
       </Stack>
@@ -899,6 +905,7 @@ export default function ContentCreator() {
           textAlign: "left",
           width: "100%",
           marginBottom: 150,
+          paddingLeft: 20,
         }}
       >
         <Stack
@@ -914,10 +921,10 @@ export default function ContentCreator() {
               display: "flex",
               flexDirection: "column",
               textAlign: "left",
-              width: "30%",
+              width: "45%",
             }}
           >
-          {/*  <Link>
+            {/*  <Link>
               <Button
                 variant="contained"
                 sx={{
@@ -944,7 +951,7 @@ export default function ContentCreator() {
               </Button> 
             </Link> */}
             <Stack
-            direction={{xs: "column", sm: "column", md: "row", lg: "row"}}
+              direction={{ xs: "column", sm: "column", md: "row", lg: "row" }}
               style={{
                 display: "flex",
                 alignItems: "center",
@@ -1144,7 +1151,7 @@ export default function ContentCreator() {
               </Link>
             </Stack>
           </Stack>
-          <Stack style={{ width: "60%", right: 0 }}>
+          <Stack style={{ width: "60%", right: 0, paddingRight: 20 }}>
             <Typography
               variant="h5"
               sx={{
@@ -1239,7 +1246,7 @@ export default function ContentCreator() {
                 textDecoration: "none",
               }}
             >
-              <FontAwesomeIcon icon={faXTwitter} style={{color: "white"}} />
+              <FontAwesomeIcon icon={faXTwitter} style={{ color: "white" }} />
             </Link>
           </Box>
           <Box
@@ -1275,7 +1282,7 @@ export default function ContentCreator() {
                 textDecoration: "none",
               }}
             >
-              <FontAwesomeIcon icon={faFacebookF} style={{color: "white"}} />
+              <FontAwesomeIcon icon={faFacebookF} style={{ color: "white" }} />
             </Link>
           </Box>
           <Box
@@ -1311,7 +1318,7 @@ export default function ContentCreator() {
                 textDecoration: "none",
               }}
             >
-              <FontAwesomeIcon icon={faLinkedin} style={{color: "white"}} />
+              <FontAwesomeIcon icon={faLinkedin} style={{ color: "white" }} />
             </Link>
           </Box>
           <Box
@@ -1347,7 +1354,7 @@ export default function ContentCreator() {
                 textDecoration: "none",
               }}
             >
-              <FontAwesomeIcon icon={faInstagram} style={{color: "white"}} />
+              <FontAwesomeIcon icon={faInstagram} style={{ color: "white" }} />
             </Link>
           </Box>
         </Stack>

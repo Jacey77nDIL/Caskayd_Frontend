@@ -907,6 +907,7 @@ export default function ContentCreator() {
           textAlign: "left",
           width: "100%",
           marginBottom: 150,
+          paddingLeft: 20,
         }}
       >
         <Stack
@@ -922,7 +923,7 @@ export default function ContentCreator() {
               display: "flex",
               flexDirection: "column",
               textAlign: "left",
-              width: "30%",
+              width: "45%",
             }}
           >
             {/* <Link>
@@ -1152,7 +1153,7 @@ export default function ContentCreator() {
               </Link>
             </Stack>
           </Stack>
-          <Stack style={{ width: "60%", right: 0 }}>
+          <Stack style={{ width: "60%", right: 0, paddingRight: 20 }}>
             <Typography
               variant="h5"
               sx={{
