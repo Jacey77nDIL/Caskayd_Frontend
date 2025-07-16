@@ -1,6 +1,7 @@
 *{
   margin: 0;
   padding: 0;
+  overflow: hidden;
 }
 .landing-page {
   height: 100vh;
@@ -18,7 +19,7 @@
 .background{
    background-image: url("/landing.jpeg");
     background-size: cover;
-    height: 80vh;
+    height: 85vh;
     width: 90%;
   background-position: center;
   border-radius: 20px;
