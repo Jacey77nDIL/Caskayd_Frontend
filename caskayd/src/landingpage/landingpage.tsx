@@ -73,7 +73,7 @@ export default function LandingPage() {
           >
             <Typography
               sx={{
-                fontSize: { xs: 20, sm: 30, md: 42, lg: 62},
+                fontSize: { xs: 20, sm: 30, md: 42, lg: 50},
                 color: "white",
                 fontWeight: "bold",
                 letterSpacing: 2,
