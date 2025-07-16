@@ -1,4 +1,7 @@
-
+*{
+  margin: 0;
+  padding: 0;
+}
 .landing-page {
   height: 100vh;
 /*  background-image: url("../assets/landing/landing.jpeg"); */

@@ -10,8 +10,8 @@ export default function LandingPage() {
           display: "flex",
           flexDirection: "row",
           justifyContent: "space-between",
-          width: "80%",
         }}
+        sx={{width: {xs: "90%", sm: "88%", md: "84%", lg: "80%"}}}
       >
         <Typography
           variant="h4"
@@ -36,6 +36,7 @@ export default function LandingPage() {
               transition: "all 0.3s ease",
               borderRadius: "8px",
               fontSize: { xs: 12, sm: 16, md: 18, lg: 20, xl: 22 },
+              textWrap: "nowrap",
 
               "@media (hover: hover)": {
                 "&:hover": {
@@ -70,7 +71,7 @@ export default function LandingPage() {
           >
             <Typography
               sx={{
-                fontSize: { xs: 20, sm: 30, md: 45, lg: 70, xl: 80 },
+                fontSize: { xs: 20, sm: 30, md: 42, lg: 62},
                 color: "white",
                 fontWeight: "bold",
                 letterSpacing: 2,
@@ -94,7 +95,7 @@ export default function LandingPage() {
                 fontFamily: "Roboto, sans-serif",
                 paddingLeft: { xs: 2, sm: 6, md: 8, lg: 10, xl: 13 },
                 paddingRight: { xs: 2, sm: 6, md: 8, lg: 10, xl: 13 },
-                fontSize: { xs: 12, sm: 16, md: 18, lg: 20, xl: 22 },
+                fontSize: { xs: 16, sm: 16, md: 18, lg: 20, xl: 22 },
                 mb: 8,
               }}
             >

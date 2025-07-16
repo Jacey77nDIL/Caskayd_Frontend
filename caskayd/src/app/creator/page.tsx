@@ -29,12 +29,12 @@ export default function ContentCreator() {
           flexDirection: "row",
           justifyContent: "space-between",
           alignItems: "center",
-          width: "80%",
           zIndex: 1000,
           backgroundColor: "black",
           borderRadius: 20,
           overflowY: "hidden",
         }}
+        sx={{width: {xs: "90%", sm: "88%", md: "84%", lg: "80%"}}}
       >
         <Typography
           variant="h5"
@@ -59,6 +59,7 @@ export default function ContentCreator() {
               transition: "all 0.3s ease",
               borderRadius: "8px",
               fontSize: { xs: 12, sm: 16, md: 18, lg: 20, xl: 22 },
+              textWrap: "nowrap",
 
               "@media (hover: hover)": {
                 "&:hover": {
@@ -80,7 +81,6 @@ export default function ContentCreator() {
             style={{
               display: "flex",
               flexDirection: "column",
-              paddingTop: "10px",
               paddingLeft: "10px",
               paddingRight: "10px",
               position: "relative",
@@ -113,7 +113,7 @@ export default function ContentCreator() {
                 fontFamily: "Roboto, sans-serif",
                 paddingLeft: { xs: 2, sm: 6, md: 8, lg: 10, xl: 13 },
                 paddingRight: { xs: 2, sm: 6, md: 8, lg: 10, xl: 13 },
-                fontSize: { xs: 12, sm: 16, md: 18, lg: 20, xl: 22 },
+                fontSize: { xs: 16, sm: 16, md: 18, lg: 20, xl: 22 },
                 mb: 8,
               }}
             >
@@ -138,7 +138,7 @@ export default function ContentCreator() {
                 },
               }}
             >
-              <Link>
+         {/*     <Link>
                 <Button
                   variant="contained"
                   sx={{
@@ -160,7 +160,7 @@ export default function ContentCreator() {
                 >
                   Open Caskayd Web
                 </Button>
-              </Link>
+              </Link> */}
               <Link style={{ textDecoration: "none" }}>
                 <Button
                   variant="contained"
@@ -440,7 +440,7 @@ export default function ContentCreator() {
               },
             }}
           >
-            <FontAwesomeIcon icon={faInstagram} />
+            <FontAwesomeIcon icon={faInstagram} style={{color: "white"}} />
           </Box>
           <Typography
             sx={{
@@ -494,7 +494,7 @@ export default function ContentCreator() {
               },
             }}
           >
-            <FontAwesomeIcon icon={faFacebookF} />
+            <FontAwesomeIcon icon={faFacebookF} style={{color: "white"}} />
           </Box>
           <Typography
             sx={{
@@ -547,7 +547,7 @@ export default function ContentCreator() {
               },
             }}
           >
-            <FontAwesomeIcon icon={faTiktok} />
+            <FontAwesomeIcon icon={faTiktok} style={{color: "white"}} />
           </Box>
           <Typography
             sx={{
@@ -600,7 +600,7 @@ export default function ContentCreator() {
               },
             }}
           >
-            <FontAwesomeIcon icon={faYoutube} />
+            <FontAwesomeIcon icon={faYoutube} style={{color: "white"}} />
           </Box>
           <Typography
             sx={{
@@ -679,7 +679,7 @@ export default function ContentCreator() {
               },
             }}
           >
-            <FontAwesomeIcon icon={faXTwitter} />
+            <FontAwesomeIcon icon={faXTwitter} style={{color: "white"}} />
           </Box>
           <Typography
             sx={{
@@ -732,7 +732,7 @@ export default function ContentCreator() {
               },
             }}
           >
-            <FontAwesomeIcon icon={faWhatsapp} />
+            <FontAwesomeIcon icon={faWhatsapp} style={{color: "white"}} />
           </Box>
           <Typography
             sx={{
@@ -785,7 +785,7 @@ export default function ContentCreator() {
               },
             }}
           >
-            <FontAwesomeIcon icon={faSnapchatGhost} />
+            <FontAwesomeIcon icon={faSnapchatGhost} style={{color: "white"}}/>
           </Box>
           <Typography
             sx={{
@@ -838,7 +838,7 @@ export default function ContentCreator() {
               },
             }}
           >
-            <FontAwesomeIcon icon={faTelegramPlane} />
+            <FontAwesomeIcon icon={faTelegramPlane} style={{color: "white"}} />
           </Box>
           <Typography
             sx={{
@@ -890,7 +890,7 @@ export default function ContentCreator() {
           fontFamily: "Roboto, sans-serif",
           paddingLeft: { xs: 2, sm: 6, md: 8, lg: 10, xl: 13 },
           paddingRight: { xs: 2, sm: 6, md: 8, lg: 10, xl: 13 },
-          fontSize: { xs: 12, sm: 16, md: 18, lg: 20, xl: 22 },
+          fontSize: { xs: 16, sm: 16, md: 18, lg: 20, xl: 22 },
           mb: 8,
         }}
       >
@@ -951,7 +951,7 @@ export default function ContentCreator() {
           fontFamily: "Roboto, sans-serif",
           paddingLeft: { xs: 2, sm: 6, md: 8, lg: 10, xl: 13 },
           paddingRight: { xs: 2, sm: 6, md: 8, lg: 10, xl: 13 },
-          fontSize: { xs: 12, sm: 16, md: 18, lg: 20, xl: 22 },
+          fontSize: { xs: 16, sm: 16, md: 18, lg: 20, xl: 22 },
           mb: 8,
         }}
       >
@@ -1020,7 +1020,7 @@ export default function ContentCreator() {
               width: "30%",
             }}
           >
-            <Link>
+          {/*  <Link>
               <Button
                 variant="contained"
                 sx={{
@@ -1044,8 +1044,8 @@ export default function ContentCreator() {
                 }}
               >
                 Open Caskayd Web
-              </Button>
-            </Link>
+              </Button> 
+            </Link> */}
             <Stack
               style={{
                 display: "flex",
@@ -1337,11 +1337,11 @@ export default function ContentCreator() {
                 justifyContent: "center",
                 width: "100%",
                 height: "100%",
-                color: "inherit",
+                color: "white",
                 textDecoration: "none",
               }}
             >
-              <FontAwesomeIcon icon={faXTwitter} />
+              <FontAwesomeIcon icon={faXTwitter} style={{color: "white"}} />
             </Link>
           </Box>
           <Box
@@ -1373,11 +1373,11 @@ export default function ContentCreator() {
                 justifyContent: "center",
                 width: "100%",
                 height: "100%",
-                color: "inherit",
+                color: "white",
                 textDecoration: "none",
               }}
             >
-              <FontAwesomeIcon icon={faFacebookF} />
+              <FontAwesomeIcon icon={faFacebookF} style={{color: "white"}} />
             </Link>
           </Box>
           <Box
@@ -1409,11 +1409,11 @@ export default function ContentCreator() {
                 justifyContent: "center",
                 width: "100%",
                 height: "100%",
-                color: "inherit",
+                color: "white",
                 textDecoration: "none",
               }}
             >
-              <FontAwesomeIcon icon={faLinkedin} />
+              <FontAwesomeIcon icon={faLinkedin} style={{color: "white"}} />
             </Link>
           </Box>
           <Box
@@ -1445,11 +1445,11 @@ export default function ContentCreator() {
                 justifyContent: "center",
                 width: "100%",
                 height: "100%",
-                color: "inherit",
+                color: "white",
                 textDecoration: "none",
               }}
             >
-              <FontAwesomeIcon icon={faInstagram} />
+              <FontAwesomeIcon icon={faInstagram} style={{color: "white"}} />
             </Link>
           </Box>
         </Stack>
