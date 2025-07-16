@@ -26,8 +26,27 @@ export default function LandingPage() {
         >
           Logo
         </Typography>
-        <Link href="">
-          <Button variant="text" sx={{ color: "white" }}>
+        <Link href="/waitlist">
+          <Button
+            variant="contained"
+            sx={{
+              color: "white",
+              backgroundColor: "transparent",
+              border: "2px solid transparent",
+              transition: "all 0.3s ease",
+              borderRadius: "8px",
+              fontSize: { xs: 12, sm: 16, md: 18, lg: 20, xl: 22 },
+
+              "@media (hover: hover)": {
+                "&:hover": {
+                  backgroundColor: "white   ",
+                  transform: "scale(1.05)",
+                  color: "black",
+                  borderColor: "white",
+                },
+              },
+            }}
+          >
             Start Using Caskayd
           </Button>
         </Link>
@@ -91,7 +110,7 @@ export default function LandingPage() {
                 /* textTransform: "uppercase", */
                 marginBottom: 6,
                 fontFamily: "Roboto, sans-serif",
-                fontSize: {xs: 16, sm: 20, md: 25, lg: 28, xl: 30},
+                fontSize: { xs: 16, sm: 20, md: 25, lg: 28, xl: 30 },
               }}
             >
               Quick one! Where do you belong?
@@ -113,20 +132,41 @@ export default function LandingPage() {
                 },
               }}
             >
-              <Button
-                variant="contained"
-                size="large"
-                sx={{ backgroundColor: "white", color: "black" }}
-              >
-                Creator
-              </Button>
-              <Button
-                variant="contained"
-                size="large"
-                sx={{ backgroundColor: "black", color: "white" }}
-              >
-                Business
-              </Button>
+              <Link href="/creator">
+                <Button
+                  variant="contained"
+                  size="large"
+                  sx={{
+                    backgroundColor: "white",
+                    color: "black",
+                    transition: "all 0.3s ease",
+                    "&:hover": {
+                      transform: "scale(1.05)",
+                      //backgroundColor: "#f0f0f0",
+                      backgroundColor: "#e0e0e0",
+                    },
+                  }}
+                >
+                  Creator
+                </Button>
+              </Link>
+              <Link href="/business">
+                <Button
+                  variant="contained"
+                  size="large"
+                  sx={{
+                    backgroundColor: "black",
+                    color: "white",
+                    transition: "all 0.3s ease",
+                    "&:hover": {
+                      transform: "scale(1.05)",
+                      backgroundColor: "#111",
+                    },
+                  }}
+                >
+                  Business
+                </Button>
+              </Link>
             </Stack>
           </Stack>
         </Box>
